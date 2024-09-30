@@ -61,8 +61,8 @@ live_bonus_flag = False
 fine_flag = False
 speed_bonus_flag = False
 flash_time = 0  # начало паузы
-bonus_time = 0  # начало работы бонуса +
-bonus_time2 = 0
+bonus_time = 0  # начало работы бонуса 1
+bonus_time2 = 0 # начало работы бонуса 2
 
 # создаём объекты по размерам
 ball = pygame.Rect(width // 2 - r_ball, height // 2 - r_ball, r_ball, r_ball)
@@ -241,7 +241,6 @@ while not done:
         show_popup("You win!", bonus_color)
         # окно выигрыш
 
-    # надпись сверху число жизней
 
     pygame.display.flip()  # Обновляем экран
     clock.tick(60)  # ограничение
